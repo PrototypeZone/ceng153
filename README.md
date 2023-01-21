@@ -1,11 +1,4 @@
-# ceng153
-```mermaid
----
-title: CENG 355 example
----
-flowchart LR;RaspberryPi<-->Firebase;Firebase<-->Android;
-RaspberryPi<-.->Bluetooth;Bluetooth<-.->Android;
-```
+# SenseHat UML Class Diagram
 ```mermaid
 classDiagram
     note "CENG153 Greenhouse Controller"
@@ -30,4 +23,11 @@ classDiagram
         +bool is_wild
         +run()
     }
+```
+```mermaid
+---
+title: CENG 355 example
+---
+flowchart LR;RaspberryPi<-->Firebase;Firebase<-->Android;
+RaspberryPi<-.->Bluetooth;Bluetooth<-.->Android;
 ```
