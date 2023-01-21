@@ -1,12 +1,12 @@
 # ceng153
 ```mermaid
+---
+title: CENG 355 example
+---
 flowchart LR;RaspberryPi<-->Firebase;Firebase<-->Android;
 RaspberryPi<-.->Bluetooth;Bluetooth<-.->Android;
 ```
 ```mermaid
----
-title: Animal example
----
 classDiagram
     note "CENG153 Greenhouse Controller"
     Animal <|-- Duck
