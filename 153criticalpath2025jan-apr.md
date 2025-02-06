@@ -6,19 +6,19 @@ Winter 2025 Class Schedule (Tentative)
 
 |Week|A/B       |Topics/Assignment                                                                                         | Due %               |
 |----|----------|----------------------------------------------------------------------------------------------------------|---------------------|
-|1   |2025-01-08|Course Introduction and Schedule, lab01                                                                   |4                    |
-|2   |2025-01-15|lab02                                                                                                     |4                    |
-|3   |2025-01-22|lab03                                                                                                     |4                    |
-|4   |2025-01-29|lab04                                                                                                     |4                    |
-|5   |2025-02-05|lab05                                                                                                     |4                    |
-|6   |2025-02-12|lab06                                                                                                     |4                    |
+|1   |2025-01-08|Course Introduction and Schedule, lab01 - Hello World on single board computer development platform       |4                    |
+|2   |2025-01-15|Makefiles, doxygen headers, and i2c, lab02 - hts221                                                       |4                    |
+|3   |2025-01-22|Simple/Minimum C program gdb, Serial funciton/make/lsm9ds1, lab03 - lps25h                                |4                    |
+|4   |2025-01-29|Frame buffer, led2472g, lab04 - lsm9ds1                                                                   |4                    |
+|5   |2025-02-05|typedef, lab06, and revisiting lsm9ds1, lab05 - led2472g                                                  |4                    |
+|6   |2025-02-12|array of structs, lab06 - bubble                                                                          |4                    |
 |7   |2025-02-19|Midterm                                                                                                   |25 Midterm           |
-|8   |2025-02-26|linkedlists (March 8 Midterm Grades Due)                                                                  |                     |
+|8   |2025-02-26|linkedlists question/demo lists, vscode (March 8 Midterm Grades Due)                                      |                     |
 |    |2025-03-05|*Reading Week, No Class Scheduled*                                                                        |                     |
 |9   |2025-03-13|lab07                                                                                                     |4                    |
 |10  |2025-03-20|lab08                                                                                                     |4                    |
 |11  |2025-03-27|lab09                                                                                                     |4                    |
-|12  |2025_04_03|lab10                                                                                                     |                     |
+|12  |2025_04_03|lab10                                                                                                     |4                    |
 |13  |2025-04-10|Final                                                                                                     |35                   |
 |14  |2025-04-17|                                                                                                          |                     |
 |    |          |                                                                                                          |**100**              |
