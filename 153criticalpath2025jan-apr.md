@@ -1,4 +1,4 @@
-# Welcome to [CENG 153 – Techniccal C](https://humber.ca/transferoptions/course-outlines/outline.html?code=CENG%20153)
+# Welcome to [CENG 153 – Technical C](https://humber.ca/transferoptions/course-outlines/outline.html?code=CENG%20153)
 
 # Critical Path
 
