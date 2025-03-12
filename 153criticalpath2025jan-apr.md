@@ -16,7 +16,7 @@ Winter 2025 Class Schedule (Tentative)
 |8   |2025-02-26|linkedlists question/demo lists, lab - vscode, doxygen (March 8 Midterm Grades Due)                       |                     |
 |    |2025-03-05|*Reading Week, No Class Scheduled*                                                                        |                     |
 |9   |2025-03-12|lab07 - vscode, pointers, doxygen                                                                         |4                    |
-|10  |2025-03-19|lab08                                                                                                     |4                    |
+|10  |2025-03-19|lab08 - linked list                                                                                       |4                    |
 |11  |2025-03-26|lab09                                                                                                     |4                    |
 |12  |2025-04-02|lab10                                                                                                     |4                    |
 |13  |2025-04-09|Final                                                                                                     |35                   |
