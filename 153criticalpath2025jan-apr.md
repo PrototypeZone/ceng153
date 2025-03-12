@@ -13,14 +13,14 @@ Winter 2025 Class Schedule (Tentative)
 |5   |2025-02-05|typedef, lab06, and revisiting lsm9ds1, lab05 - led2472g                                                  |4                    |
 |6   |2025-02-12|array of structs, lab06 - bubble                                                                          |4                    |
 |7   |2025-02-19|Midterm                                                                                                   |25 Midterm           |
-|8   |2025-02-26|linkedlists question/demo lists, lab - vscode (March 8 Midterm Grades Due)                                |                     |
+|8   |2025-02-26|linkedlists question/demo lists, lab - vscode, doxygen (March 8 Midterm Grades Due)                       |                     |
 |    |2025-03-05|*Reading Week, No Class Scheduled*                                                                        |                     |
-|9   |2025-03-13|lab07                                                                                                     |4                    |
-|10  |2025-03-20|lab08                                                                                                     |4                    |
-|11  |2025-03-27|lab09                                                                                                     |4                    |
-|12  |2025_04_03|lab10                                                                                                     |4                    |
-|13  |2025-04-10|Final                                                                                                     |35                   |
-|14  |2025-04-17|                                                                                                          |                     |
+|9   |2025-03-12|lab07 - vscode, pointers, doxygen                                                                         |4                    |
+|10  |2025-03-19|lab08                                                                                                     |4                    |
+|11  |2025-03-26|lab09                                                                                                     |4                    |
+|12  |2025-04-02|lab10                                                                                                     |4                    |
+|13  |2025-04-09|Final                                                                                                     |35                   |
+|14  |2025-04-16|                                                                                                          |                     |
 |    |          |                                                                                                          |**100**              |
 
 
