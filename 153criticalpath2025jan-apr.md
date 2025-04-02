@@ -20,7 +20,7 @@ Winter 2025 Class Schedule (Tentative)
 |11  |2025-03-26|lab09                                                                                                     |4                    |
 |12  |2025-04-02|lab10                                                                                                     |4                    |
 |13  |2025-04-09|Final                                                                                                     |35                   |
-|14  |2025-04-16|                                                                                                          |                     |
+|14  |2025-04-16|Snake,EtchSketch,8x8emulator,Tetris?                                                                      |                     |
 |    |          |                                                                                                          |**100**              |
 
 
