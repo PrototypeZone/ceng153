@@ -1,3 +1,5 @@
+[Course Outline](https://humber.ca/transferoptions/course-outlines/outline.html?code=CENG%20153)
+
 C15301PiLinux 
 [C15301PiLinux2023-05-10.docx](https://humberital-my.sharepoint.com/:w:/g/personal/mdrk0011_humber_ca/EfZLD7V41I9Ao7Vv_nRxsU0BufKzvzMXJ99VevltFZW3lg?e=vu1vE6)
 
