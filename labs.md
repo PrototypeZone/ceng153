@@ -1,4 +1,37 @@
-[Course Outline](https://humber.ca/transferoptions/course-outlines/outline.html?code=CENG%20153)
+[CENG 153 Course Outline](https://humber.ca/transferoptions/course-outlines/outline.html?code=CENG%20153)
+
+Welcome to CENG 153 - Pick up a pi kit before your class/lab
+You are instructed to pick up the Raspberry Pi kit for the CENG153 course (also used in CENG 260, CENG 317, and CENG 355). Each kit contains (complete Raspberry Pi4 Kit, Raspberry Pi4 - Power Supply, SD Card Reader, USB 3.0 to Ethernet Adapter, and Ethernet Cable Cat6). 
+
+To receive this kit, you need to note the following:
+
+
+Identification: student needs to present a photo ID such as Humber student ID or driving license. Without a photo ID, you will not receive this kit.  
+
+Place: the crib, J215, J Building, north campus, Humber College.  
+
+Date: Monday to Friday (but before your lab)
+
+Time: from 9:00 AM to 4:00 PM.
+
+You need to put your signature on the receiving form.
+
+
+
+To refresh your knowledge of C, visit:
+
+http://humber.ca/linkedinlearning/index.php
+
+Select the sign in option in the top right hand corner.
+
+Sign In With Your Organization account.
+
+Once this option is selected, users only need to enter the following: humber.ca. Your full email address (Humber or otherwise) is not required.
+
+Users will be asked to merge their LinkedIn profiles with their LinkedIn Learning profiles. If a user does not have a LinkedIn account, they will have an opportunity to create a LinkedIn profile/account. The merging of accounts and the creation of a LinkedIn account is optional.
+
+Then once logged in go to:
+https://www.linkedin.com/learning/learning-c-5/
 
 C15301PiLinux 
 [C15301PiLinux2023-05-10.docx](https://humberital-my.sharepoint.com/:w:/g/personal/mdrk0011_humber_ca/EfZLD7V41I9Ao7Vv_nRxsU0BufKzvzMXJ99VevltFZW3lg?e=vu1vE6)
