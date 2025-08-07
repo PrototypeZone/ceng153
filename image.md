@@ -240,3 +240,4 @@ Set the date sudo date –s “01 MAY 2020 13:00:00”
              sudo date -s "15 FEB 2024 12:22:00"   
 
 https://forums.raspberrypi.com/viewtopic.php?t=370152   
+https://raspberrypi.stackexchange.com/questions/149232/connect-to-two-separate-networks-using-a-raspberry-pi-5   
