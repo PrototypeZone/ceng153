@@ -13,6 +13,7 @@ Should be done with [pi-gen](#pi-gen), going to try [legacy-process](#legacy-pro
 ```
 $ curl -L https://nixos.org/nix/install | sh
 ```
+Interesting https://github.com/geerlingguy/sbc-reviews/issues/21
 ## pi-gen
 1. The image creation using pi-gen should be done upon minor releases every few months. Websites to visit to identify minor releases:   
 https://en.wikipedia.org/wiki/Raspberry_Pi_OS#Releases   
