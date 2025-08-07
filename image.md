@@ -1,7 +1,7 @@
 # Steps taken to create Raspberry Pi OS SD card image suitable for this course
 
 ## 2025-08-07
-(editor's note to self see Documents\ceng317\DevelopmentTimeNeeded.txt)   
+*(editor's note to self see Documents\ceng317\DevelopmentTimeNeeded.txt)*   
 We are looking to create a ready to go version of   
 https://downloads.raspberrypi.com/raspios_full_armhf/images/raspios_full_armhf-2025-05-13/2025-05-13-raspios-bookworm-armhf-full.img.xz   
 which will include:   
