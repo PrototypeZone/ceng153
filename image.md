@@ -9,6 +9,9 @@ which will include:
 [/home/pi/C153SenseHat2025-06-12](https://github.com/PrototypeZone/ceng153/tree/main/C153SenseHat2025-06-12)   
 [/home/pi/lg-master](https://github.com/joan2937/lg)
 
+Should be done with [pi-gen](#pi-gen), going to try [legacy-process](#legacy-process) first.
+
+## pi-gen
 1. The image creation using pi-gen should be done upon minor releases every few months. Websites to visit to identify minor releases:   
 https://en.wikipedia.org/wiki/Raspberry_Pi_OS#Releases   
 https://downloads.raspberrypi.com/raspios_full_armhf/images/   
@@ -22,11 +25,11 @@ https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/debian-12.11.0-amd64-
 4. Install Oracle VM VirtualBox
 5. Start Oracle VM VirtualBox
 6. Machine->New…
-7. Name: 2024-03-15-rpioshf
-8. ISO Image: debian-12.5.0-amd64-DVD-1.iso
+7. Name: 2025-05-12-rpioshf
+8. ISO Image: debian-12.11.0-amd64-DVD-1.iso
 9. Username: vboxuser   
 Password: changeme   
-Hostname: 2024-03-15-rpioshf   
+Hostname: 2025-05-12-rpioshf   
 Domain Name: myguest.virtualbox.org   
 Check Guest Additions   
 Next   
@@ -126,3 +129,111 @@ EOF
 45. ```sudo ./build.sh -c myconfig ```
 
 Configuration still needs tweaking to attempt to match the previously hacked image, a run seems to take over 40 () minutes. 
+
+## image-testing 
+Image should boot on the following platforms as of 4/29/2024, the 4Bs since current students have them and the 5B since the next order should ideally be of 5Bs.   
+    Q2 2019 4B V1.1 b03111   
+    Q1 2022 4B V1.5 b03115   
+    Q1 2022 4B V1.5 c03115   
+    __ ____ 5B V1.0 c04170   
+It is helpful for the image to be backwards compatible with existing 2B and 3Bs on campus and for CENG 317 and CENG 355 Wi-Fi is required. For CENG 260, Open CV+ is required, specifications unknown currently.   
+
+## legacy-process
+Format an at least class 10 minimum of 16GB SD card with: https://www.sdcard.org/downloads/formatter_4/index.html   
+Use win32diskimager (used instead of rufus, balena etcher, Raspberry Pi Imager since it can also read images) to write [2025-05-13-raspios-bookworm-armhf-full.img](https://downloads.raspberrypi.com/raspios_full_armhf/images/raspios_full_armhf-2025-05-13/2025-05-13-raspios-bookworm-armhf-full.img.xz) to a 16GB or bigger card   
+Boot on a pi connected to hardwired monitor, keyboard and mouse, then make the following tweaks   
+canada canadian english toronto us keyboard english language   
+pi/pi login/password   
+firefox over chromium   
+skip, reboot   
+firefox calls home, has weird initial settings, change them before connecting to the internet   
+remove quiet in /boot/commandline.txt such that can see waiting for network   
+hdmi_group=1   
+hdmi_mode=4   
+Recall that hooking up a monitor helps with image debugging but not so much if the video feed blanks after a timeout , consider https://www.raspberrypi.com/documentation/computers/configuration.html#list-of-options30   
+sudo raspi-config nonint do_blanking 1   
+sudo raspi-config nonint do_audio 1   
+sudo raspi-config nonint do_ssh 0   
+sudo raspi-config nonint do_vnc 0   
+sudo raspi-config nonint do_i2c 0   
+sudo nmcli con mod “Wired connection 1” ipv4.addresses 169.254.0.2/16 ipv4.gateway 169.254.0.1 ipv4.dns 0.0.0.0 ipv4.method manual   
+sudo systemctl restart NetworkManager   
+cd Desktop   
+wget https://github.com/joan2937/lg/archive/master.zip   
+unzip master.zip   
+cd lg-master   
+make   
+sudo make install  
+cd ~   
+add   
+[/home/pi/C153Doxygen2023-05-30](https://github.com/PrototypeZone/ceng153/tree/main/C153Doxygen2023-05-30)   
+[/home/pi/C153SenseHat2025-06-12](https://github.com/PrototypeZone/ceng153/tree/main/C153SenseHat2025-06-12)   
+Then compile at a terminal in the sensehat directory by typing:   
+make? (vs gcc shmenu.c hts221.c lps25h.c led2472g.c lsm9ds1.c tcs3400.c -li2c)   
+(Note that only the latest Sense HAT Version 2 has the TCS3400 RGB colour and brightness sensor)   
+run by typing:   
+./a.out   
+gcc shtest.c hts221.c lps25h.c led2472g.c lsm9ds1.c tcs3400.c -li2c -o /home/pi/shtest   
+edit /etc/rc.local and add sudo /home/pi/shtest & on a line before the exit command   
+Start (Raspberry Symbol)->Programming->Visual Studio Code 
+
+Install the C/C++ Extension by Microsoft 
+Here's the resulting start to a bookworm image, 2025-08-07pi5fall2025:   
+```TODO insert sharepoint link to zip```   
+​
+The current start to a bookworm image might not have this yet so connect via VNC viewer and use the GUI to connect to the eduguest WiFi and open a browser to 1.1.1.1,  http://wifi-portal.humber.ca/wifisplash.php with appended MAC address to accept terms to be able to:   
+
+sudo apt install vim -y   
+sudo apt install libi2c-dev -y   
+sudo apt install codeblocks -y   
+codeblock dependencies noted here in case networking is down (note that we now use vscode... so update here todo... sudo apt install code -y):   
+
+sudo apt install codeblocks-common   
+sudo apt install libastyle3   
+sudo apt install libcodeblocks0   
+sudo apt install libtinyxml2.6.2v5   
+sudo apt install libutempter0   
+sudo apt install xbitmaps   
+sudo apt install xterm   
+
+sudo apt install libfuse2 -y   
+sudo apt install libncurses -y   
+sudo apt install libncurses-dev -y
+
+Note for older pi image https://archive.raspbian.org/raspbian/pool/main/i/i2c-tools/libi2c-dev_4.1-1_armhf.deb can be used despite errors.   
+
+So far we've noticed that vi is loaded instead of vim, and that for later in CENG 153 we also sudo apt install codeblocks, in case of no internet download and install separately: 
+
+sudo dpkg -i vim-runtime_9.0.1378-2_all.deb   
+sudo dpkg -i vim_9.0.1378-2_armhf.deb   
+sudo dpkg -i libi2c-dev_4.3-2+b2_armhf.deb   
+sudo dpkg -i libwxbase3.0-0v5_3.0.5.1+dfsg-5+b1_armhf.deb   
+sudo dpkg -i libwxgtk3.0-gtk3-0v5_3.0.5.1+dfsg-5+b1_armhf.deb   
+sudo dpkg -i libtinyxml2.6.2v5_2.6.2-6_armhf.deb   
+sudo dpkg -i libastyle3_3.1-3_armhf.deb   
+sudo dpkg -i libcodeblocks0_20.03-3_armhf.deb   
+sudo dpkg -i codeblocks-common_20.03-3_all.deb   
+sudo dpkg -i codeblocks_20.03-3_armhf.deb   
+sudo dpkg -i xbitmaps_1.1.1-2.1_all.deb   
+sudo dpkg -i libutempter0_1.2.1-3_armhf.deb   
+sudo dpkg -i xterm_389-1_armhf.deb   
+sudo dpkg -i libfuse2_2.9.9-8_armhf.deb   
+sudo dpkg -i libncurses-dev_6.4-4_armhf.deb   
+
+I have a couple of scripts one is 6 years old that attempted to duplicate Paul's image creation steps (which additionally set up mysql-server, phpmyadmin, glgtoolkit among other steps) and a simple one that adds the above packages once downloaded thus winscp transfer getstartedwithpi5testing if available:   
+
+chmod u+x additionalpackages.sh   
+./additionalpackages.sh   
+
+which adds vim, codeblocks, and xterm, otherwise add them manually.   
+
+change menu entry for codeblocks to use sudo since otherwise the icons are unwieldy.   
+
+use vnc viewer click on up/down arrow Click here to set Wi-Fi Country CA Canada OK, eduguest   
+
+Once Wi-Fi is reliable again this is a moot point due to Network Time Protocol (NTP) but for now:   
+
+Set the date sudo date –s “01 MAY 2020 13:00:00”   
+             sudo date -s "15 FEB 2024 12:22:00"   
+
+https://forums.raspberrypi.com/viewtopic.php?t=370152   
