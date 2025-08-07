@@ -177,7 +177,7 @@ gcc shtest.c hts221.c lps25h.c led2472g.c lsm9ds1.c tcs3400.c -li2c -o /home/pi/
 edit /etc/rc.local and add sudo /home/pi/shtest & on a line before the exit command   
 Start (Raspberry Symbol)->Programming->Visual Studio Code 
 
-Install the C/C++ Extension by Microsoft 
+Install the C/C++ Extension by Microsoft   
 Here's the resulting start to a bookworm image, 2025-08-07pi5fall2025:   
 ```TODO insert sharepoint link to zip```   
 ​
