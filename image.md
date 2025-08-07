@@ -9,8 +9,10 @@ which will include:
 [/home/pi/C153SenseHat2025-06-12](https://github.com/PrototypeZone/ceng153/tree/main/C153SenseHat2025-06-12)   
 [/home/pi/lg-master](https://github.com/joan2937/lg)
 
-Should be done with [pi-gen](#pi-gen), going to try [legacy-process](#legacy-process) first.
-
+Should be done with [pi-gen](#pi-gen), going to try [legacy-process](#legacy-process) first. Consider the use of nix: 
+```
+$ curl -L https://nixos.org/nix/install | sh
+```
 ## pi-gen
 1. The image creation using pi-gen should be done upon minor releases every few months. Websites to visit to identify minor releases:   
 https://en.wikipedia.org/wiki/Raspberry_Pi_OS#Releases   
