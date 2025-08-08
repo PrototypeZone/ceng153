@@ -144,53 +144,37 @@ It is helpful for the image to be backwards compatible with existing 2B and 3Bs 
 ## legacy-process
 1. Format an at least class 10 minimum of 16GB SD card with: https://www.sdcard.org/downloads/formatter_4/index.html   
 2. Use win32diskimager (used instead of rufus, balena etcher, Raspberry Pi Imager since it can also read images) to write [2025-05-13-raspios-bookworm-armhf-full.img](https://downloads.raspberrypi.com/raspios_full_armhf/images/raspios_full_armhf-2025-05-13/2025-05-13-raspios-bookworm-armhf-full.img.xz) to a 16GB or bigger card   
-Boot on a pi connected to hardwired monitor, keyboard and mouse, then make the following tweaks   
-canada canadian english toronto us keyboard english language   
-pi/pi login/password   
-firefox over chromium   
-skip, reboot   
-firefox calls home, has weird initial settings, change them before connecting to the internet   
-remove quiet in /boot/commandline.txt such that can see waiting for network   
-hdmi_group=1   
-hdmi_mode=4   
+3. Boot on a pi connected to hardwired monitor, keyboard and mouse (there is a power button but the first boot seems to take a few minutes)   
+4. Press 'Next' to get started.
+5. Enter Canada, Canadian English, Toronto, Use English language, Use US keyboard
+6. pi/pi login/password
+7. Skip WiFi
+8. firefox over chromium
+9. skip, restart (note that although deprecated and non reactive during start up wpa_supplicant.service was begun?)
+10. firefox calls home, has weird initial settings, change them before connecting to the internet
+11. From a terminal ```sudo raspi-config nonint do_blanking 1```
+13. sudo raspi-config nonint do_audio 1   (no such entity?)
+14. ```sudo raspi-config nonint do_ssh 0```
+15. ```sudo raspi-config nonint do_vnc 0```
+16. ```sudo raspi-config nonint do_i2c 0```   
+17. sudo nano /boot/firmware/cmdline.txt to remove quiet such that can see waiting for network
+previously sudo nano /boot/firmware/config.txt to hdmi_group=1   hdmi_mode=4   
 Recall that hooking up a monitor helps with image debugging but not so much if the video feed blanks after a timeout , consider https://www.raspberrypi.com/documentation/computers/configuration.html#list-of-options30   
-sudo raspi-config nonint do_blanking 1   
-sudo raspi-config nonint do_audio 1   
-sudo raspi-config nonint do_ssh 0   
-sudo raspi-config nonint do_vnc 0   
-sudo raspi-config nonint do_i2c 0   
-sudo nmcli con mod “Wired connection 1” ipv4.addresses 169.254.0.2/16 ipv4.gateway 169.254.0.1 ipv4.dns 0.0.0.0 ipv4.method manual   
-sudo systemctl restart NetworkManager   
-cd Desktop   
-wget https://github.com/joan2937/lg/archive/master.zip   
-unzip master.zip   
-cd lg-master   
-make   
-sudo make install  
-cd ~   
-add   
-[/home/pi/C153Doxygen2023-05-30](https://github.com/PrototypeZone/ceng153/tree/main/C153Doxygen2023-05-30)   
-[/home/pi/C153SenseHat2025-06-12](https://github.com/PrototypeZone/ceng153/tree/main/C153SenseHat2025-06-12)   
-Then compile at a terminal in the sensehat directory by typing:   
-make? (vs gcc shmenu.c hts221.c lps25h.c led2472g.c lsm9ds1.c tcs3400.c -li2c)   
-(Note that only the latest Sense HAT Version 2 has the TCS3400 RGB colour and brightness sensor)   
-run by typing:   
-./a.out   
-gcc shtest.c hts221.c lps25h.c led2472g.c lsm9ds1.c tcs3400.c -li2c -o /home/pi/shtest   
-edit /etc/rc.local and add sudo /home/pi/shtest & on a line before the exit command   
-Start (Raspberry Symbol)->Programming->Visual Studio Code 
-
-Install the C/C++ Extension by Microsoft   
-Here's the resulting start to a bookworm image, 2025-08-07pi5fall2025:   
-```TODO insert sharepoint link to zip```   
-​
-The current start to a bookworm image might not have this yet so connect via VNC viewer and use the GUI to connect to the eduguest WiFi and open a browser to 1.1.1.1,  http://wifi-portal.humber.ca/wifisplash.php with appended MAC address to accept terms to be able to:   
-
-sudo apt install vim -y   
-sudo apt install libi2c-dev -y   
-sudo apt install codeblocks -y   
-codeblock dependencies noted here in case networking is down (note that we now use vscode... so update here todo... sudo apt install code -y):   
-
+previously sudo nmcli con mod “Wired connection 1” ipv4.addresses 169.254.0.2/16 ipv4.gateway 169.254.0.1 ipv4.dns 0.0.0.0 ipv4.method manual   
+previously sudo systemctl restart NetworkManager
+18. Connect to eduguest by selecting it top right then open browser to login/accept eduguest policy
+19. wget https://github.com/prototypezone/ceng153/archive/master.zip to be able to make directories [/home/pi/C153Doxygen2023-05-30](https://github.com/PrototypeZone/ceng153/tree/main/C153Doxygen2023-05-30) [/home/pi/C153SenseHat2025-06-12](https://github.com/PrototypeZone/ceng153/tree/main/C153SenseHat2025-06-12) available by using file manage guis   
+20. cd Desktop   
+21. wget https://github.com/joan2937/lg/archive/master.zip   
+22. unzip master.zip   
+23. cd lg-master   
+24. make
+25. sudo make install  
+26. cd ~   
+27. ```sudo apt install vim -y```  N.B. vim also needs vim-runtime   
+28. sudo apt install libi2c-dev -y   
+29. sudo apt install codeblocks -y   
+codeblock dependencies noted here in case networking is down (note that we now use vscode... ):   
 sudo apt install codeblocks-common   
 sudo apt install libastyle3   
 sudo apt install libcodeblocks0   
@@ -198,6 +182,25 @@ sudo apt install libtinyxml2.6.2v5
 sudo apt install libutempter0   
 sudo apt install xbitmaps   
 sudo apt install xterm   
+30. sudo apt install code -y
+31. Start (Raspberry Symbol)->Programming->Visual Studio Code 
+32. Install the C/C++ Extension by Microsoft   
+33. cd C153SenseHat2025-06-12
+```stopped here```
+Then compile at a terminal in the sensehat directory by typing:   
+make? (vs gcc shmenu.c hts221.c lps25h.c led2472g.c lsm9ds1.c tcs3400.c -li2c)   
+(Note that only the latest Sense HAT Version 2 has the TCS3400 RGB colour and brightness sensor)   
+run by typing:   
+./a.out   
+gcc shtest.c hts221.c lps25h.c led2472g.c lsm9ds1.c tcs3400.c -li2c -o /home/pi/shtest   
+edit /etc/rc.local and add sudo /home/pi/shtest & on a line before the exit command   
+
+Here's the resulting start to a bookworm image, 2025-08-07pi5fall2025:   
+```TODO insert sharepoint link to zip```   
+Should be able to ssh, scp, vnc to raspberrypi.local using USB-ethernet and login with pi/pi
+
+### If no network:​
+The current start to a bookworm image might not have this yet so connect via VNC viewer and use the GUI to connect to the eduguest WiFi and open a browser to 1.1.1.1,  http://wifi-portal.humber.ca/wifisplash.php with appended MAC address to accept terms to be able to:   
 
 sudo apt install libfuse2 -y   
 sudo apt install libncurses -y   
@@ -206,7 +209,6 @@ sudo apt install libncurses-dev -y
 Note for older pi image https://archive.raspbian.org/raspbian/pool/main/i/i2c-tools/libi2c-dev_4.1-1_armhf.deb can be used despite errors.   
 
 So far we've noticed that vi is loaded instead of vim, and that for later in CENG 153 we also sudo apt install codeblocks, in case of no internet download and install separately: 
-
 sudo dpkg -i vim-runtime_9.0.1378-2_all.deb   
 sudo dpkg -i vim_9.0.1378-2_armhf.deb   
 sudo dpkg -i libi2c-dev_4.3-2+b2_armhf.deb   
