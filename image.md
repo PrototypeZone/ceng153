@@ -142,8 +142,8 @@ Image should boot on the following platforms as of 4/29/2024, the 4Bs since curr
 It is helpful for the image to be backwards compatible with existing 2B and 3Bs on campus and for CENG 317 and CENG 355 Wi-Fi is required. For CENG 260, Open CV+ is required, specifications unknown currently.   
 
 ## legacy-process
-Format an at least class 10 minimum of 16GB SD card with: https://www.sdcard.org/downloads/formatter_4/index.html   
-Use win32diskimager (used instead of rufus, balena etcher, Raspberry Pi Imager since it can also read images) to write [2025-05-13-raspios-bookworm-armhf-full.img](https://downloads.raspberrypi.com/raspios_full_armhf/images/raspios_full_armhf-2025-05-13/2025-05-13-raspios-bookworm-armhf-full.img.xz) to a 16GB or bigger card   
+1. Format an at least class 10 minimum of 16GB SD card with: https://www.sdcard.org/downloads/formatter_4/index.html   
+2. Use win32diskimager (used instead of rufus, balena etcher, Raspberry Pi Imager since it can also read images) to write [2025-05-13-raspios-bookworm-armhf-full.img](https://downloads.raspberrypi.com/raspios_full_armhf/images/raspios_full_armhf-2025-05-13/2025-05-13-raspios-bookworm-armhf-full.img.xz) to a 16GB or bigger card   
 Boot on a pi connected to hardwired monitor, keyboard and mouse, then make the following tweaks   
 canada canadian english toronto us keyboard english language   
 pi/pi login/password   
