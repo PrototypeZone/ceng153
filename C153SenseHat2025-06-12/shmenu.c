@@ -1,6 +1,6 @@
 /** @brief Examples of sense-hat usage
  *  @file shmenu.c
- *  @since 2024-03-27
+ *  @since 2025-08-25
  *
  *  compile by typing gcc shmenu.c hts221.c lps25h.c led2472g.c lsm9ds1.c tcs3400.c -li2c
  *               or just 'make'
