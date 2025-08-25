@@ -160,6 +160,7 @@ It is helpful for the image to be backwards compatible with existing 2B and 3Bs 
 17. sudo nano /boot/firmware/cmdline.txt to remove quiet such that can see waiting for network
 previously sudo nano /boot/firmware/config.txt to hdmi_group=1   hdmi_mode=4   
 Recall that hooking up a monitor helps with image debugging but not so much if the video feed blanks after a timeout , consider https://www.raspberrypi.com/documentation/computers/configuration.html#list-of-options30   
+trying this previously used steps since the windows computer I was using was not assigning an IP address even though DHCP was set up:   
 previously sudo nmcli con mod “Wired connection 1” ipv4.addresses 169.254.0.2/16 ipv4.gateway 169.254.0.1 ipv4.dns 0.0.0.0 ipv4.method manual   
 previously sudo systemctl restart NetworkManager
 18. Connect to eduguest by selecting it top right then open browser to login/accept eduguest policy
@@ -185,16 +186,25 @@ sudo apt install xterm
 30. sudo apt install code -y
 31. Start (Raspberry Symbol)->Programming->Visual Studio Code 
 32. Install the C/C++ Extension by Microsoft   
-33. cd C153SenseHat2025-06-12
-```stopped here```
-Then compile at a terminal in the sensehat directory by typing:   
-make? (vs gcc shmenu.c hts221.c lps25h.c led2472g.c lsm9ds1.c tcs3400.c -li2c)   
+33. Then compile at a terminal in the sensehat directory by typing:  ```cd C153SenseHat2025-06-12```
+34. ```make```
 (Note that only the latest Sense HAT Version 2 has the TCS3400 RGB colour and brightness sensor)   
-run by typing:   
-./a.out   
-gcc shtest.c hts221.c lps25h.c led2472g.c lsm9ds1.c tcs3400.c -li2c -o /home/pi/shtest   
-edit /etc/rc.local and add sudo /home/pi/shtest & on a line before the exit command   
+35. ```make shtest```
+36. deprecated create/edit /etc/rc.local and add sudo /home/pi/shtest & on a line before the exit command
+    https://askubuntu.com/questions/919054/how-do-i-run-a-single-command-at-startup-using-systemd
+create e.g. sudo vim /etc/systemd/system/shtest.service
+```
+[Unit]
+Description=SenseHat test service
 
+[Service]
+ExecStart=/home/pi/shtest
+
+[Install]
+WantedBy=multi-user.target
+```
+37. ```sudo systemctl enable shtest```
+38. Seem to be able to WinSCP but not VNC/PuTTY so disable Wi-Fi by selecting from the taskbar "Turn Off Wireless LAN"
 Here's the resulting start to a bookworm image, 2025-08-07pi5fall2025:   
 ```TODO insert sharepoint link to zip```   
 Should be able to ssh, scp, vnc to raspberrypi.local using USB-ethernet and login with pi/pi
