@@ -206,7 +206,7 @@ void lps25h(void){
  * @version CENG153, serial: 1a2b3c4d
  * @author Kris Medri
  * @author Modifier's Name
- * @since 2024-03-12
+ * @since 2025-08-25
  * @param void
  * @return void
  */
@@ -214,7 +214,9 @@ void lsm9ds1(void)
 {
     //TODO
     printf("magnetometer = %.2f\n", ShGetMG()); 
-    printf("accelerometer/gyroscope = %.2f \n", ShGetAG());
+    printf("accelerometer x = %.2f \n", ShGetAccelX());
+    printf("accelerometer y = %.2f \n", ShGetAccelY());
+    printf("accelerometer z = %.2f \n", ShGetAccelZ());
 	return;
 }
 
