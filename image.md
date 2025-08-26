@@ -205,8 +205,8 @@ WantedBy=multi-user.target
 ```
 37. ```sudo systemctl enable shtest```
 38. Seem to be able to WinSCP but not VNC/PuTTY so disable Wi-Fi by selecting from the taskbar "Turn Off Wireless LAN"
-Here's the resulting start to a bookworm image, 2025-08-07pi5fall2025:   
-```TODO insert sharepoint link to zip```   
+Here's the resulting start to a bookworm image, 2025-08-07-pi5fall2025:   
+https://humberital-my.sharepoint.com/:u:/g/personal/mdrk0011_humber_ca/EZMfhn89TipNtBAhKou3F6YBkW-bXpGnuBQB1LDn2EeY_A?e=rxgMvx   
 Should be able to ssh, scp, vnc to raspberrypi.local using USB-ethernet and login with pi/pi
 
 ### If no network:​
