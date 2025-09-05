@@ -66,4 +66,4 @@ C15310Alarms
 C15311Linked 
 [C15311Linked2021-06-28.docx](https://humberital-my.sharepoint.com/:w:/g/personal/mdrk0011_humber_ca/EQLk8NjOjVJOjEfOym3-8UUBEdolc--4Qmuoc03gKiP7rA?e=N1d5wt)
 
-In case you need to re-image a Pi other than a Pi 5: [2024-06-10 Humber Bullseye Image](https://humberital-my.sharepoint.com/:u:/g/personal/mdrk0011_humber_ca/EQ4fQVAaqn9CsVg5qoSNQ70B2Z_OsFoFKBil0W7f9brfTQ?e=vMpuhy)
+In case you need to re-image a Pi: [2025-08-07-pi5fall2025](https://humberital-my.sharepoint.com/:u:/g/personal/mdrk0011_humber_ca/EZMfhn89TipNtBAhKou3F6YBkW-bXpGnuBQB1LDn2EeY_A?e=rxgMvx)
