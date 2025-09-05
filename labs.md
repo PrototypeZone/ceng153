@@ -46,7 +46,7 @@ C15304ControlLogic
 [C15304ControlLogic2023-05-30.docx](https://humberital-my.sharepoint.com/:w:/g/personal/mdrk0011_humber_ca/EY8-CDNJ3gBHjRPkqx0syiMBVXcyKrxfwr5QrQwTTU-5xw?e=gY5SEX)
 
 C15305Doxygen 
-[​C15305Doxygen2024-05-28.docx](https://humberital-my.sharepoint.com/:w:/g/personal/mdrk0011_humber_ca/EYRFzf3JRrpPsRTER6Nx3CABE9ksI_qWT1B2o7HxoG3P4w?e=arsfrA)
+[C15305Doxygen2025-09-05.docx](https://humberital-my.sharepoint.com/:w:/g/personal/mdrk0011_humber_ca/EcZmEyi98DlHpyPfnTHMG9ABkOikiNZPEgxHeYJZNYoCVg?e=WMekoo)
 
 C15306Structures 
 [C15306Structures2023-05-30.docx](https://humberital-my.sharepoint.com/:w:/g/personal/mdrk0011_humber_ca/EU6hrkAM_ERAtscbdCPTKu0B3gWhJhyvUulnTpsCDhxoow?e=Znof13)
