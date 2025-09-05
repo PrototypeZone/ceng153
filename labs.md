@@ -1,7 +1,7 @@
 [CENG 153 Course Outline](https://humber.ca/transferoptions/course-outlines/outline.html?code=CENG%20153)
 
 Welcome to CENG 153 - Pick up a pi kit before your class/lab
-You are instructed to pick up the Raspberry Pi kit for the CENG153 course (also used in CENG 260, CENG 317, and CENG 355). Each kit contains (complete Raspberry Pi4 Kit, Raspberry Pi4 - Power Supply, SD Card Reader, USB 3.0 to Ethernet Adapter, and Ethernet Cable Cat6). 
+You are instructed to pick up the Raspberry Pi kit for the CENG153 course (also used in CENG 260, CENG 317, and CENG 355). Each kit contains (complete Raspberry Pi5 Kit, Raspberry Pi4 - Power Supply, SD Card Reader, USB 3.0 to Ethernet Adapter, and Ethernet Cable Cat6). 
 
 To receive this kit, you need to note the following:
 
