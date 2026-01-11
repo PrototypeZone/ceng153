@@ -1,4 +1,4 @@
-# TECH 104 Lab 01
+# TECH 153 Lab 01
 
 - [ ] Demonstrate the execution of the program to your professor. ___/2
 
