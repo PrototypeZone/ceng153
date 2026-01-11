@@ -1,9 +1,6 @@
 # TECH 104 Lab 01
 
-- [ ] Demonstrate the execution of the program to your professor. ___/2.5
-- [ ] Choose a system that has a computer program that you are familiar or will
-    become familiar with by being the first to choose it on the Blackboard
-    Discussion forum. ___/1.5 (0.5 of which is for photo).
+- [ ] Demonstrate the execution of the program to your professor. ___/2
 
 ## 1. Running your first program
 
@@ -69,4 +66,10 @@ Also run
 
 ## 3. Magnetic compass
 
-This semester's project is a magnetic compass.
+This semester's project is a magnetic compass.   
+Create a file compass.c   
+At the command prompt run the command chmod g+r compass.c e.g.:   
+```shell
+    chmod g+r compass.c
+```
+Begin to create a program for providing the readings from a digital magnetic compass.   
