@@ -55,7 +55,7 @@ To learn more about vim, visit the interactive vim tutorial at [openvim.com](htt
 
 ## 2. Providing access to your work
 
-1.  At the command prompt run the command chmod g+r pun.c e.g.:
+1.  At the bash shell run the command chmod g+r pun.c e.g.:
 ```shell
     chmod g+r pun.c
 ```
