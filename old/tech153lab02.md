@@ -123,6 +123,6 @@ float GhGetTemperature(void)
 ```
 
 ## 3. Magnetic compass
-Continue to create a program for providing the readings from a digital magnetic compass.   
+Continue to create a program for providing the readings from the lsm9ds1 digital magnetic compass.   
 
 
