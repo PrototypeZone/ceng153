@@ -72,4 +72,4 @@ At the command prompt run the command chmod g+r compass.c e.g.:
 ```shell
     chmod g+r compass.c
 ```
-Begin to create a program for providing the readings from a digital magnetic compass.   
+Begin to create a program for providing the readings from an lsm9ds1 digital magnetic compass.   
