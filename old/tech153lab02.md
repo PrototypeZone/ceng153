@@ -31,6 +31,22 @@
 #define LSPRESS 975
 #define USTEMP 50
 #define LSTEMP -10
+#if HSH
+#define HSH_RTC_I2CADR 0x68
+#define HSH_MCP23017_I2CADR 0x20
+#define HSH_PCF8591_I2CADR 0x48
+#define HSH_BME280_I2CADR 0x76
+#define HSH_MCP23017_PINBASE 100
+#define HSH_PCF8591_PINBASE 200
+#define HSH_BME280_PINBASE 300
+#define HSH_PCF8591_A01N 3 //analogRead(HSH_PCF8591_PINBASE+HSH_PCF8591_A01N);
+#define GEN00 0
+#define GEN01 1
+typedef enum {NOCOLOUR,RED,YELLOW,GREEN}ledcolour_e;
+#define HEATERON 0 //RED digitalWrite(GEN00,HIGH);
+#define HUMIDIFIERON 1 //GREEN digitalWrite(GEN01,HIGH);
+#define GHCOFF 2
+#endif
 
 // Function Prototypes
 void GhControllerInit(void);
