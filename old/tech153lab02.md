@@ -87,7 +87,7 @@ float GhGetHumidity(void)
 #elif HTS221
     return ShGetHumidity();
 #else
-	return (float) GhGetRandom(USHUMID - LSHUMID +1) + LSHUMID;
+	return (float) rand() % (USHUMID - LSHUMID +1) + LSHUMID;
 #endif
 }
 
@@ -98,7 +98,7 @@ float GhGetPressure(void)
 #elif LPS25H
     return ShGetPressure();
 #else
-	return (float) GhGetRandom(USPRESS - LSPRESS + 1) +LSPRESS;
+	return (float) rand() % (USPRESS - LSPRESS + 1) +LSPRESS;
 #endif
 }
 
@@ -116,7 +116,7 @@ float GhGetTemperature(void)
 #elif LPS25H
     return ShGetTemperature(); //From pressure sensor
 #else
-	return (float) GhGetRandom(USTEMP - LSTEMP + 1) + LSTEMP;
+	return (float) rand() % (USTEMP - LSTEMP + 1) + LSTEMP;
 #endif
 }
 
