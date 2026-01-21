@@ -21,6 +21,7 @@
 #define TEMPERATURE 0
 #define HUMIDITY 1
 #define PRESSURE 2
+#define HSH 0
 #define BME280 0
 #define HTS221 0
 #define LPS25H 0
@@ -68,6 +69,18 @@ int main(void)
 void GhControllerInit(void){
 	srand((unsigned) time(NULL));
 	GhDisplayHeader("Your Name");
+#if HSH
+	wiringPiSetup();
+	mcp23017Setup(HSH_MCP23017_PINBASE, HSH_MCP23017_I2CADR);
+	pcf8591Setup(HSH_PCF8591_PINBASE, HSH_PCF8591_I2CADR);
+	pinMode(HSH_MCP23017_PINBASE+HEATERON, OUTPUT);
+	pinMode(HSH_MCP23017_PINBASE+HUMIDIFIERON, OUTPUT);
+	pinMode(HSH_MCP23017_PINBASE+GHCOFF, INPUT);
+	SetLED(GREEN);
+#endif
+#if BME280
+	BME280Setup();
+#endif
 }
 
 void GhDisplayHeader(const char * sname)
@@ -83,7 +96,7 @@ void GhDisplayReadings(time_t rtime,float dreads[SENSORS])
 float GhGetHumidity(void)
 {
 #if BME280
-	return GetHumidity();
+	return GetBME280Humidity();
 #elif HTS221
     return ShGetHumidity();
 #else
@@ -94,7 +107,7 @@ float GhGetHumidity(void)
 float GhGetPressure(void)
 {
 #if BME280
-	return GetPressure();
+	return GetBME280Pressure();
 #elif LPS25H
     return ShGetPressure();
 #else
@@ -112,7 +125,7 @@ void GhGetReadings(float readings[SENSORS])
 float GhGetTemperature(void)
 {
 #if BME280
-	return GetTemperature();
+	return GetBME280TempC();
 #elif LPS25H
     return ShGetTemperature(); //From pressure sensor
 #else
