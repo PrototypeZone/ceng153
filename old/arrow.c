@@ -44,12 +44,14 @@ int main(void)
     sprintf(str,"Compass");
     ShViewMessage(str,100,WHITE,BLACK,fb);
     usleep (300000);
-    for (int i =0; i<360;i++){
-        ShConvertIntegerToPattern(i,logo,WHITE,BLACK);
+    int angles[]={401,402,355,1,75,135,45,2,0,90,180,315,270,404};
+    for (int i =0; i<sizeof(angles);i++){
+        ShConvertIntegerToPattern(angles[i],logo,WHITE,BLACK);
         ShViewPattern(logo,fb);
         usleep (300000);
     }
     memset(fb, 0, 128);
+    usleep (300000);
 
     return EXIT_SUCCESS;
 }
