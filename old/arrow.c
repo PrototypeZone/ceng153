@@ -7,7 +7,12 @@
  *  run by typing ./arrow
  */
 
+#include <stdbool.h>
 #include "arrow.h"
+#include "led2472g.h"
+#include "lsm9ds1.h"
+
+void ShConvertIntegerToPattern(int a, uint16_t image[8][8], uint16_t colorText, uint16_t colorBackground);
 
 /** Development of digital compass
  * @author Kris Medri
@@ -36,22 +41,29 @@ int main(void)
     ShViewPattern(logo,fb);
     usleep (300000);
     char str[33];
-    sprintf(str,"T: mB");
+    sprintf(str,"Compass");
     ShViewMessage(str,100,WHITE,BLACK,fb);
+    usleep (300000);
+    for (int i =0; i<360;i++){
+        ShConvertIntegerToPattern(i,logo,WHITE,BLACK);
+        ShViewPattern(logo,fb);
+        usleep (300000);
+    }
+    memset(fb, 0, 128);
 
     return EXIT_SUCCESS;
 }
 
-/** @brief Converts a character to an LED matrix pattern.
+/** @brief Converts an integer to an LED matrix pattern.
  */
-void ShConvertCharacterToPattern(char c, uint16_t image[8][8], uint16_t colorText, uint16_t colorBackground)
+void ShConvertIntegerToPattern(int a, uint16_t image[8][8], uint16_t colorText, uint16_t colorBackground)
 {
     int i=0;
     int j,k;
-    int tailleTableDeConvertion=sizeof(font)/sizeof(Tfont);
+    int tailleTableDeConvertion=sizeof(arrow)/sizeof(Tarrow);
 
     // Recherche si le caractere existe dans la table de convertion (cf font.h)
-    while(c!=font[i].caractere && i < tailleTableDeConvertion )
+    while(a!=arrow[i].angle && i < tailleTableDeConvertion )
 	i++;
 
     // Si le caractere est dans la table on le converti
@@ -61,13 +73,13 @@ void ShConvertCharacterToPattern(char c, uint16_t image[8][8], uint16_t colorTex
         {
             for(k=0;k<8;k++)
             {
-                if(font[i].binarypattern[j][k]) { image[j][k]=colorText; }
+                if(arrow[i].binarypattern[j][k]) { image[j][k]=colorText; }
                 else { image[j][k]=colorBackground; }
             }
         }
     }
     else // caractère inexistant on le remplace par un glyphe inconnu
     {
-        ShConvertCharacterToPattern(255,image,colorText,colorBackground);
+        ShConvertIntegerToPattern(404,image,colorText,colorBackground);
     }
 }
