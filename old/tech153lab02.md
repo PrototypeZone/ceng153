@@ -5,7 +5,7 @@
 ## 1. Continue to work on the main part of compass.c on mikelake
 ```
 /** @brief Digital compass display, with timestamped humitdity, pressure and temperature.
- *  @file compass.c
+ *  @file compass.h
  *  @version ceng153, Serial: 1a2b3c4d  
  */
 
@@ -58,6 +58,17 @@ float GhGetPressure(void);
 void GhGetReadings(float readings[SENSORS]);
 float GhGetTemperature(void);
 
+```
+
+## 2. Add the protoyped functions
+
+```
+/** @brief Digital compass display, with timestamped humitdity, pressure and temperature.
+ *  @file compass.c
+ *  @version ceng153, Serial: 1a2b3c4d  
+ */
+#include "compass.h"
+
 /** @brief Defines the entry point for the console application.  
  * @author Your Name
  * @since 2026-01-21
@@ -78,11 +89,7 @@ int main(void)
 
 	return EXIT_FAILURE;
 }
-```
 
-## 2. Add the protoyped functions
-
-```
 void GhControllerInit(void){
 	srand((unsigned) time(NULL));
 	GhDisplayHeader("Your Name");
