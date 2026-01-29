@@ -12,7 +12,7 @@ fprintf(stdout,"Unit: %LX\n",ShGetSerial());
 ```
 in main add   
 ```
-uint16_t logo[8][8];
+    uint16_t logo[8][8];
     struct fb_t *fb;
     fb=ShInit(fb);
     memset(fb, 0, 128);
