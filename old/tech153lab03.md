@@ -18,8 +18,7 @@ to
 ```
 and run your code to get real readings.   
 ## 3. Magnetic compass   
-contribute to arrow.h   
-compile and run arrow.c   
+ 
 Continue to create a program for providing the readings from the lsm9ds1 digital magnetic compass.   
 
 
