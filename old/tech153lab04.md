@@ -29,7 +29,7 @@ after the loop add
     memset(fb, 0, 128);
     usleep (300000);
 ```
-and change `FAILURE` to `SUCCESS` then run your code.   
+and change `FAILURE` to `SUCCESS` then run your code and show your professor.   
 ## 3. Magnetic compass   
 Continue to create a program for providing the readings from the lsm9ds1 digital magnetic compass.   
 
