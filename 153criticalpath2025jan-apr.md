@@ -8,7 +8,7 @@ Winter 2025 Class Schedule (Tentative)
 |----|----------|----------------------------------------------------------------------------------------------------------|---------------------|
 |1   |2025-01-08|Course Introduction and Schedule, lab01 - Hello World on single board computer development platform       |4                    |
 |2   |2025-01-15|Makefiles, doxygen headers, and i2c, lab02 - hts221                                                       |4                    |
-|3   |2025-01-22|Simple/Minimum C program gdb, Serial funciton/make/lsm9ds1, lab03 - lps25h                                |4                    |
+|3   |2025-01-22|Simple/Minimum C program gdb, Serial function/make/lsm9ds1, lab03 - lps25h                                |4                    |
 |4   |2025-01-29|Frame buffer, led2472g, lab04 - lsm9ds1                                                                   |4                    |
 |5   |2025-02-05|typedef, lab06, and revisiting lsm9ds1, lab05 - led2472g                                                  |4                    |
 |6   |2025-02-12|array of structs, lab06 - bubble                                                                          |4                    |
