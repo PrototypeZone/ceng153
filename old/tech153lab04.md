@@ -3,7 +3,8 @@
 - [ ] Demonstrate the execution of the program to your professor. ___/2
 
 ## 1. Implement steps discussed in class
-Create the makefile as per class for compass.c and download the updated led2472g.h, led2472g.c, font.h
+Create the makefile as per class for compass.c and download the updated led2472g.h, led2472g.c, font.h   
+Update the serial in the block comment to your actual serial number.   
 
 ## 2. Update compass.c
 in GhDisplayHeader add   
