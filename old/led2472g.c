@@ -432,6 +432,11 @@ void ShConvertIntegerToPattern(int s, uint16_t image[8][8], uint16_t colorText, 
     int j,k;
     int r=s/15;
     int a=s%15;
+    if(a<0)
+    {
+        a=15+a;
+    }
+    printf(" r:%4d, a:%4d\n",r,a);
     int tailleTableDeConvertion=sizeof(arrow)/sizeof(Tarrow);
 
     // Recherche si le caractere existe dans la table de convertion (cf font.h)
@@ -454,10 +459,20 @@ void ShConvertIntegerToPattern(int s, uint16_t image[8][8], uint16_t colorText, 
     {
         ShConvertIntegerToPattern(404,image,colorText,colorBackground);
     }
-    for(r;r>0;r--)
+    if(r>0)
     {
-        ShRotateImage(-90, image);
+        for(r;r>0;r--)
+        {
+            ShRotateImage(-90, image);
+        }
     }
+    //else if(r<0) //TODO
+    //{
+    //    for(r;r<0;r++)
+    //    {
+    //        ShRotateImage(90, image);
+    //    }
+    //}
 }
 
 /** @brief Displays a message on the LED matrix.

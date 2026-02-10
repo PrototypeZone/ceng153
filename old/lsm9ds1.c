@@ -266,7 +266,7 @@ double ShGetMagX(void)
     i2c_smbus_write_byte_data(fd, CTRL_REG1, 0x00);
     close(fd);
 
-    return OUT_X*0.000244;
+    return OUT_X*-0.000244;
 }
 
 /** Brief
@@ -319,7 +319,7 @@ double ShGetMagY(void)
     i2c_smbus_write_byte_data(fd, CTRL_REG1, 0x00);
     close(fd);
 
-    return OUT_Y*-0.000244;
+    return OUT_Y*0.000244;
 }
 
 /** Brief
