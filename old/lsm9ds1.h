@@ -58,10 +58,10 @@
 
 // Function Prototypes
 /// @cond INTERNAL
-double ShGetMG();
+double ShGetGyro();
 double ShGetMagX();
-//double ShGetMagY();
-//double ShGetMagZ();
+double ShGetMagY();
+double ShGetMagZ();
 
 //also added these lines to .h file for lab04
 double ShGetAccelX();
