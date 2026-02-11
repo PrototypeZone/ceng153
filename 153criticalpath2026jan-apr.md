@@ -10,7 +10,7 @@ Winter 2026 Class Schedule (Tentative)
 |2   |2026-01-21|Makefiles, lab02 - compass.c on mikelake showing simulated readings                                       |2                    |
 |3   |2026-01-28|i2c, lab03 - Showing real readings on pi by end of lab                                                    |2                    |
 |4   |2026-02-04|lsm9ds1, lab04 - Showing second hand on LED matrix.                                                       |2                    |
-|5   |2026-02-11|typedef and revisiting lsm9ds1, lab05 - lsm9ds1                                                           |2                    |
+|5   |2026-02-11|gdb, typedef and revisiting lsm9ds1, lab05 - lsm9ds1                                                      |2                    |
 |6   |2026-02-18|array of structs, Lab Test 1                                                                              |5                    |
 |7   |2026-02-25|Lab-review, Class-Midterm                                                                                 |25 Midterm           |
 |    |2026-03-04|*Reading Week, No Class Scheduled*                                                                        |                     |
