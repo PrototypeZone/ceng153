@@ -436,7 +436,7 @@ void ShConvertIntegerToPattern(int s, uint16_t image[8][8], uint16_t colorText, 
     {
         a=15+a;
     }
-    printf(" r:%4d, a:%4d\n",r,a);
+    //printf(" r:%4d, a:%4d\n",r,a);
     int tailleTableDeConvertion=sizeof(arrow)/sizeof(Tarrow);
 
     // Recherche si le caractere existe dans la table de convertion (cf font.h)
