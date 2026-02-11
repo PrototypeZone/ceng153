@@ -4,8 +4,8 @@
 
 ## 1. Implement steps discussed in class
 Download the updated led2472g.h, led2472g.c, lsm9ds1.h, lsm9ds1.c   
-Add an lsm9ds1 recipe to your makefile.   
-Add an include for math.h to compass.h   
+Add an lsm9ds1.o recipe to your makefile.   
+Add includes for math.h and lsm9ds1.h to compass.h   
 
 ## 2. Update compass.c
 in main add   
