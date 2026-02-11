@@ -18,7 +18,7 @@ in the main for loop add
 ```
         x=ShGetMagX();
         y=ShGetMagY();
-		    angle=atan2(y,x)*180/M_PI+180+270;//-180to+180,+180+270
+        angle=atan2(y,x)*180/M_PI+180+270;//-180to+180,+180+270
 ```
 modify:
 ```
