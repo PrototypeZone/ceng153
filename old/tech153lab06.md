@@ -1,4 +1,3 @@
-tech153lab06.md
 # TECH 153 Lab 01
 - [ ] Demonstrate the execution of the program in vscode to your professor. ___/1
 - [ ] Submit the rtf file on blackboard. ___/1
