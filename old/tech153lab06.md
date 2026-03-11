@@ -6,7 +6,12 @@
 1. In your `~/ceng153/labs` directory `mkdir queue`
 2. `cd queue` and `mkdir .vscode`
 3. In WinSCP and set Options->Preferences->Panels->Show hidden files
-4. Download https://github.com/PrototypeZone/ceng153/blob/main/old/.vscode/launch.json and use WinSCP to transfer it into your `.vscode` directory.
+4. Download and use WinSCP to transfer the following files into your `queue` directory:
+   - https://github.com/PrototypeZone/ceng153/blob/main/old/led2472g.h
+   - https://github.com/PrototypeZone/ceng153/blob/main/old/led2472g.c
+   - https://github.com/PrototypeZone/ceng153/blob/main/old/font.h 
+4. Download and use WinSCP to transfer the following file into your `.vscode` directory:
+   - https://github.com/PrototypeZone/ceng153/blob/main/old/.vscode/launch.json 
 
 ## Task 2 - Creating a makefile
 1. In your `~/ceng153/labs/queue/` directory create the following makefile
@@ -101,14 +106,15 @@ int main(void)
 A visual interface is available with Vs Code for the gdb debugger.
 1.	From the main menu on the pi go to Programming and select Visual Studio Code.
 2.	From the File menu select open folder and select then Open the queue folder you created.
-3.	From the Terminal menu select New Terminal, or if you already have one open at the bottom of the screen click on it, then type `make` in the terminal to build the code.
-4.	The code should run by using the command `./queue`
-5.	Demonstrate to your professor.
-6. From the file window open the queue.c file and then from the Run menu select Start Debugging.
-7. When prompted for the debugger select the first item for the Microsoft Intellisense extension.
-8. Open queue.c and use F9 to set a breakpoint on the printf statement;
-9. From the Run menu select Start Debugging. The debugger windows should open up and the program should execute and stop at the breakpoint.
-10. Explore the Step Over (F10) and Step Into (F11) VS Code visual environment calls to gdb's next and step
+3.	Trust the authors (you and I).
+4.	From the Terminal menu select New Terminal, or if you already have one open at the bottom of the screen click on it, type `make clean`, then `make` in the terminal to build the code.
+5.	The code should run by using the command `./queue`
+6.	Demonstrate to your professor.
+7. From the file window open the queue.c file and then from the Run menu select Start Debugging.
+8. When prompted for the debugger select the first item for the Microsoft Intellisense extension.
+9. Open queue.c and use F9 to set a breakpoint on the printf statement;
+10. From the Run menu select Start Debugging. The debugger windows should open up and the program should execute and stop at the breakpoint.
+11. Explore the Step Over (F10) and Step Into (F11) VS Code visual environment calls to gdb's next and step
 ![image](https://github.com/PrototypeZone/ceng153/blob/main/old/ghcvscode.png)
 
 ## Task 6 - Submitting your work
