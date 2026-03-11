@@ -9,7 +9,7 @@
 4. Download https://github.com/PrototypeZone/ceng153/blob/main/old/.vscode/launch.json and use WinSCP to transfer it into your `.vscode` directory.
 
 ## Task 2 - Creating a makefile
-1. In your `~/ceng153/labs` directory create the following makefile
+1. In your `~/ceng153/labs/queue/` directory create the following makefile
 ```
 #makefile
 queue: queue.o led2472g.o
@@ -26,7 +26,7 @@ clean:
 ```
 
 ## Task 3 - Creating a header file
-1. In your `~/ceng153/labs` directory create the following `queue.h`
+1. In your `~/ceng153/labs/queue/` directory create the following `queue.h`
 ```
 /** @brief Header file for a mock up of the lab assistance queue usually on the whiteboard.
  *  @file queue.h
@@ -59,7 +59,7 @@ typedef struct student
 ```
 
 ## Task 4 - Creating a main function 
-1. In your `~/ceng153/labs` directory create the following queue.c
+1. In your `~/ceng153/labs/queue/` directory create the following queue.c
 ```
 /** @brief A mock up of the lab assistance queue usually on the whiteboard.
  *  @file queue.c
