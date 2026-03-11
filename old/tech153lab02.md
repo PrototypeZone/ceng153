@@ -63,7 +63,7 @@ float GhGetTemperature(void);
 ## 2. Add the protoyped functions
 
 ```
-/** @brief Digital compass display, with timestamped humitdity, pressure and temperature.
+/** @brief Digital compass display, with timestamped humidity, pressure and temperature.
  *  @file compass.c
  *  @version ceng153, Serial: 1a2b3c4d  
  */
