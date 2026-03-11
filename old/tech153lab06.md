@@ -122,11 +122,17 @@ A visual interface is available with Vs Code for the gdb debugger.
 1. Open the web browser on the pi and try to navigate to `hu.ca` or `humber.ca` by typing that into the address bar.
 2. Select eduguest and decide whether to accpet the Acceptable Use Policy for Technical Services.
 3. At the command prompt type `sudo apt install doxygen` (it will install libclanf-cpp11 armhf 1:11.0.1-2+rpi1, libclang1-11 armhf 1:11.0.1-2+rpi1, libxapean30 armhf 1:4.18-3+deb11u1, doxygen armhf 1.9.1-1)
-4. Type `doxygen ceng153`
-5. Use WinSCP to obtain your makefile and `~/ceng153/labs/queue/rtf/refman.rtf` which you should rename to `LastName153L06.rtf`.
-6. In Word, Edit the second page of the .rtf to include the text contents of your makefile and a sample output screen capture including the output of program execution from within VS Code.
-7. Please use Notepad++->Plugins->NppExport->Copy RTF to clipboard then paste the makefile text.
-8. Use Ctrl A to select all and F9 to update fields to generate the table of contents and the index. If you are using LibreOffice Writer, right click on the gray Table of contents and select Update index also right click on the gray INDEX at the end of the file and select Update index.
-9. Submit the .rtf on blackboard.
+4. If having trouble with the internet connection, download and then use WinSCP to transfer:
+   - https://archive.raspbian.org/raspbian/pool/main/x/xapian-core/libxapian30_1.4.22-1_armhf.deb
+   - https://archive.raspbian.org/raspbian/pool/main/l/llvm-toolchain-14/libclang1-14_14.0.6-12%2Brpi1_armhf.deb
+   - https://archive.raspbian.org/raspbian/pool/main/l/llvm-toolchain-14/libclang-cpp14_14.0.6-12%2Brpi1_armhf.deb
+   - https://archive.raspbian.org/raspbian/pool/main/l/llvm-toolchain-14/libllvm14_14.0.6-12%2Brpi1_armhf.deb
+   - https://archive.raspbian.org/raspbian/pool/main/d/doxygen/doxygen_1.9.4-4_armhf.deb
+6. Type `doxygen ceng153`
+7. Use WinSCP to obtain your makefile and `~/ceng153/labs/queue/rtf/refman.rtf` which you should rename to `LastName153L06.rtf`.
+8. In Word, Edit the second page of the .rtf to include the text contents of your makefile and a sample output screen capture including the output of program execution from within VS Code.
+9. Please use Notepad++->Plugins->NppExport->Copy RTF to clipboard then paste the makefile text.
+10. Use Ctrl A to select all and F9 to update fields to generate the table of contents and the index. If you are using LibreOffice Writer, right click on the gray Table of contents and select Update index also right click on the gray INDEX at the end of the file and select Update index.
+11. Submit the .rtf on blackboard.
 
 
