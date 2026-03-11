@@ -183,7 +183,7 @@ sudo apt install libtinyxml2.6.2v5
 sudo apt install libutempter0   
 sudo apt install xbitmaps   
 sudo apt install xterm   
-30. sudo apt install doxygen -y N.B. doxygen, not in image this round but should be in the next round, also needs libclanf-cpp11 libclang1-11 libxapean30
+30. sudo apt install doxygen -y N.B. doxygen, not in image this round but should be in the next round, also needs libxapian30 libllvm14 libclang-cpp14 libclang1-14 
 31. sudo apt install code -y
 32. Start (Raspberry Symbol)->Programming->Visual Studio Code 
 33. Install the C/C++ Extension by Microsoft   
