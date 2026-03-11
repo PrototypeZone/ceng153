@@ -4,7 +4,7 @@
 
 ## 1. Continue to work on the main part of compass.c on mikelake
 ```
-/** @brief Digital compass display, with timestamped humitdity, pressure and temperature.
+/** @brief Digital compass display, with timestamped humidity, pressure and temperature.
  *  @file compass.h
  *  @version ceng153, Serial: 1a2b3c4d  
  */
