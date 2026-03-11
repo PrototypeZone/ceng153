@@ -123,5 +123,10 @@ A visual interface is available with Vs Code for the gdb debugger.
 2. Select eduguest and decide whether to accpet the Acceptable Use Policy for Technical Services.
 3. At the command prompt type `sudo apt install doxygen` (it will install libclanf-cpp11 armhf 1:11.0.1-2+rpi1, libclang1-11 armhf 1:11.0.1-2+rpi1, libxapean30 armhf 1:4.18-3+deb11u1, doxygen armhf 1.9.1-1)
 4. Type `doxygen ceng153`
-5. Use WinSCP to obtain `~/ceng153/labs/queue/rtf/refman.rtf` and submit it as `LastName153L06.rtf` on blackboard.
+5. Use WinSCP to obtain your makefile and `~/ceng153/labs/queue/rtf/refman.rtf` which you should rename to `LastName153L06.rtf`.
+6. In Word, Edit the second page of the .rtf to include the text contents of your makefile and a sample output screen capture including the output of program execution from within VS Code.
+7. Please use Notepad++->Plugins->NppExport->Copy RTF to clipboard then paste the makefile text.
+8. Use Ctrl A to select all and F9 to update fields to generate the table of contents and the index. If you are using LibreOffice Writer, right click on the gray Table of contents and select Update index also right click on the gray INDEX at the end of the file and select Update index.
+9. Submit the .rtf on blackboard.
+
 
