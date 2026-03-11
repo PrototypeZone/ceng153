@@ -10,7 +10,7 @@
    - https://github.com/PrototypeZone/ceng153/blob/main/old/led2472g.h
    - https://github.com/PrototypeZone/ceng153/blob/main/old/led2472g.c
    - https://github.com/PrototypeZone/ceng153/blob/main/old/font.h 
-4. Download and use WinSCP to transfer the following file into your `.vscode` directory:
+4. Download and use WinSCP to transfer the following file into your `queue/.vscode` directory:
    - https://github.com/PrototypeZone/ceng153/blob/main/old/.vscode/launch.json 
 
 ## Task 2 - Creating a makefile
