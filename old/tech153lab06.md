@@ -6,11 +6,12 @@
 1. In your `~/ceng153/labs` directory `mkdir queue`
 2. `cd queue` and `mkdir .vscode`
 3. In WinSCP and set Options->Preferences->Panels->Show hidden files
-4. Download and use WinSCP to transfer the following files into your `queue` directory:
+4. Download and use WinSCP to transfer the following files into your `~/ceng153/labs/queue/` directory:
    - https://github.com/PrototypeZone/ceng153/blob/main/old/led2472g.h
    - https://github.com/PrototypeZone/ceng153/blob/main/old/led2472g.c
-   - https://github.com/PrototypeZone/ceng153/blob/main/old/font.h 
-4. Download and use WinSCP to transfer the following file into your `queue/.vscode` directory:
+   - https://github.com/PrototypeZone/ceng153/blob/main/old/font.h
+   - https://github.com/PrototypeZone/ceng153/blob/main/old/ceng153 
+4. Download and use WinSCP to transfer the following file into your `~/ceng153/labs/queue/.vscode` directory:
    - https://github.com/PrototypeZone/ceng153/blob/main/old/.vscode/launch.json 
 
 ## Task 2 - Creating a makefile
@@ -120,5 +121,7 @@ A visual interface is available with Vs Code for the gdb debugger.
 ## Task 6 - Submitting your work
 1. Open the web browser on the pi and try to navigate to `hu.ca` or `humber.ca` by typing that into the address bar.
 2. Select eduguest and decide whether to accpet the Acceptable Use Policy for Technical Services.
-1. At the command prompt type `sudo apt install doxygen` (it will install libclanf-cpp11 armhf 1:11.0.1-2+rpi1, libclang1-11 armhf 1:11.0.1-2+rpi1, libxapean30 armhf 1:4.18-3+deb11u1, doxygen armhf 1.9.1-1)
+3. At the command prompt type `sudo apt install doxygen` (it will install libclanf-cpp11 armhf 1:11.0.1-2+rpi1, libclang1-11 armhf 1:11.0.1-2+rpi1, libxapean30 armhf 1:4.18-3+deb11u1, doxygen armhf 1.9.1-1)
+4. Type `doxygen ceng153`
+5. Use WinSCP to obtain `~/ceng153/labs/queue/rtf/refman.rtf` and submit it as `LastName153L06.rtf` on blackboard.
 
