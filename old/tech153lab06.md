@@ -118,5 +118,7 @@ A visual interface is available with Vs Code for the gdb debugger.
 ![image](https://github.com/PrototypeZone/ceng153/blob/main/old/ghcvscode.png)
 
 ## Task 6 - Submitting your work
-doxygen
+1. Open the web browser on the pi and try to navigate to `hu.ca` or `humber.ca` by typing that into the address bar.
+2. Select eduguest and decide whether to accpet the Acceptable Use Policy for Technical Services.
+1. At the command prompt type `sudo apt install doxygen` (it will install libclanf-cpp11 armhf 1:11.0.1-2+rpi1, libclang1-11 armhf 1:11.0.1-2+rpi1, libxapean30 armhf 1:4.18-3+deb11u1, doxygen armhf 1.9.1-1)
 
