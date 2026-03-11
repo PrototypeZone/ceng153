@@ -4,7 +4,7 @@
 
 ## Task 1 - Setting up your environment
 1. In your `~/ceng153/labs` directory `mkdir queue`
-2. `cd queue` and `mkdir `.vscode`
+2. `cd queue` and `mkdir .vscode`
 3. In WinSCP and set Options->Preferences->Panels->Show hidden files
 4. Download https://github.com/PrototypeZone/ceng153/blob/main/old/.vscode/launch.json and use WinSCP to transfer it into your `.vscode` directory.
 
