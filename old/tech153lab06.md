@@ -105,7 +105,7 @@ A visual interface is available with Vs Code for the gdb debugger.
 4. Open queue.c and use F9 to set a breakpoint on GhDelay(GHUPDATE);
 5. From the Run menu select Start Debugging. The debugger windows should open up and the program should execute and stop at the breakpoint.
 6. Explore the Step Over (F10) and Step Into (F11) VS Code visual environment calls to gdb's next and step
-[!image](https://github.com/PrototypeZone/ceng153/blob/main/old/ghcvscode.png)
+![image](https://github.com/PrototypeZone/ceng153/blob/main/old/ghcvscode.png)
 
 ## Task 6 - Submitting your work
 doxygen
