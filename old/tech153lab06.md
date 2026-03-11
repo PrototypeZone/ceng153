@@ -124,9 +124,9 @@ A visual interface is available with Vs Code for the gdb debugger.
 3. At the command prompt type `sudo apt install doxygen` (it will install libclanf-cpp11 armhf 1:11.0.1-2+rpi1, libclang1-11 armhf 1:11.0.1-2+rpi1, libxapean30 armhf 1:4.18-3+deb11u1, doxygen armhf 1.9.1-1)
 4. If having trouble with the internet connection, download and then use WinSCP to transfer:
    - https://archive.raspbian.org/raspbian/pool/main/x/xapian-core/libxapian30_1.4.22-1_armhf.deb
-   - https://archive.raspbian.org/raspbian/pool/main/l/llvm-toolchain-14/libclang1-14_14.0.6-12%2Brpi1_armhf.deb
-   - https://archive.raspbian.org/raspbian/pool/main/l/llvm-toolchain-14/libclang-cpp14_14.0.6-12%2Brpi1_armhf.deb
-   - https://archive.raspbian.org/raspbian/pool/main/l/llvm-toolchain-14/libllvm14_14.0.6-12%2Brpi1_armhf.deb
+   - https://archive.raspbian.org/raspbian/pool/main/l/llvm-toolchain-14/libclang1-14_14.0.6-12\ rpi1_armhf.deb
+   - https://archive.raspbian.org/raspbian/pool/main/l/llvm-toolchain-14/libclang-cpp14_14.0.6-12\ rpi1_armhf.deb
+   - https://archive.raspbian.org/raspbian/pool/main/l/llvm-toolchain-14/libllvm14_14.0.6-12\ rpi1_armhf.deb
    - https://archive.raspbian.org/raspbian/pool/main/d/doxygen/doxygen_1.9.4-4_armhf.deb    
      Then run the following commands:
    ```
