@@ -128,7 +128,7 @@ A visual interface is available with Vs Code for the gdb debugger.
    - https://archive.raspbian.org/raspbian/pool/main/l/llvm-toolchain-14/libclang1-14_14.0.6-12%2Brpi1_armhf.deb
    - https://archive.raspbian.org/raspbian/pool/main/l/llvm-toolchain-14/libclang-cpp14_14.0.6-12%2Brpi1_armhf.deb
    - https://archive.raspbian.org/raspbian/pool/main/d/doxygen/doxygen_1.9.4-4_armhf.deb       
-     Then run the following commands, you may need `\ ` instead of `+`:
+     Then run the following commands, if you downloaded them from blackboard instead of directly you may need `\ ` instead of `+`:
    ```
    sudo dpkg -i libxapian30_1.4.22-1_armhf.deb
    sudo dpkg -i libllvm14_14.0.6-12+rpi1_armhf.deb
