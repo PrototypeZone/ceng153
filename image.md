@@ -164,7 +164,7 @@ trying this previously used steps since the windows computer I was using was not
 previously sudo nmcli con mod “Wired connection 1” ipv4.addresses 169.254.0.2/16 ipv4.gateway 169.254.0.1 ipv4.dns 0.0.0.0 ipv4.method manual   
 previously sudo systemctl restart NetworkManager
 18. Connect to eduguest by selecting it top right then open browser to login/accept eduguest policy
-19. wget https://github.com/prototypezone/ceng153/archive/master.zip to be able to make directories [/home/pi/C153Doxygen2023-05-30](https://github.com/PrototypeZone/ceng153/tree/main/C153Doxygen2023-05-30) [/home/pi/C153SenseHat2025-06-12](https://github.com/PrototypeZone/ceng153/tree/main/C153SenseHat2025-06-12) available by using file manage guis   
+19. wget https://github.com/prototypezone/ceng153/archive/master.zip to be able to make directories [/home/pi/C153Doxygen2023-05-30](https://github.com/PrototypeZone/ceng153/tree/main/C153Doxygen2023-05-30) [/home/pi/C153SenseHat2025-06-12](https://github.com/PrototypeZone/ceng153/tree/main/C153SenseHat2025-06-12) available by using file manager guis. Updated lsm9ds1, led, and font libraries exist for next round.  
 20. cd Desktop   
 21. wget https://github.com/joan2937/lg/archive/master.zip   
 22. unzip master.zip   
@@ -183,14 +183,15 @@ sudo apt install libtinyxml2.6.2v5
 sudo apt install libutempter0   
 sudo apt install xbitmaps   
 sudo apt install xterm   
-30. sudo apt install code -y
-31. Start (Raspberry Symbol)->Programming->Visual Studio Code 
-32. Install the C/C++ Extension by Microsoft   
-33. Then compile at a terminal in the sensehat directory by typing:  ```cd C153SenseHat2025-06-12```
-34. ```make```
+30. sudo apt install doxygen -y N.B. doxygen, not in image this round but should be in the next round, also needs libclanf-cpp11 libclang1-11 libxapean30
+31. sudo apt install code -y
+32. Start (Raspberry Symbol)->Programming->Visual Studio Code 
+33. Install the C/C++ Extension by Microsoft   
+34. Then compile at a terminal in the sensehat directory by typing:  ```cd C153SenseHat2025-06-12```
+35. ```make```
 (Note that only the latest Sense HAT Version 2 has the TCS3400 RGB colour and brightness sensor)   
-35. ```make shtest```
-36. deprecated create/edit /etc/rc.local and add sudo /home/pi/shtest & on a line before the exit command
+36. ```make shtest```
+37. deprecated create/edit /etc/rc.local and add sudo /home/pi/shtest & on a line before the exit command
     https://askubuntu.com/questions/919054/how-do-i-run-a-single-command-at-startup-using-systemd
 create e.g. sudo vim /etc/systemd/system/shtest.service
 ```
