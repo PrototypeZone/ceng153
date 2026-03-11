@@ -113,7 +113,7 @@ A visual interface is available with Vs Code for the gdb debugger.
 6.	Demonstrate to your professor.
 7. From the file window open the queue.c file and then from the Run menu select Start Debugging.
 8. When prompted for the debugger select the first item for the Microsoft Intellisense extension.
-9. Open queue.c and use F9 to set a breakpoint on the printf statement;
+9. Open queue.c and use F9 to set a breakpoint on the printf statement in the for loop.
 10. From the Run menu select Start Debugging. The debugger windows should open up and the program should execute and stop at the breakpoint.
 11. Explore the Step Over (F10) and Step Into (F11) VS Code visual environment calls to gdb's next and step
 ![image](https://github.com/PrototypeZone/ceng153/blob/main/old/ghcvscode.png)
