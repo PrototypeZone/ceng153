@@ -128,6 +128,14 @@ A visual interface is available with Vs Code for the gdb debugger.
    - https://archive.raspbian.org/raspbian/pool/main/l/llvm-toolchain-14/libclang-cpp14_14.0.6-12%2Brpi1_armhf.deb
    - https://archive.raspbian.org/raspbian/pool/main/l/llvm-toolchain-14/libllvm14_14.0.6-12%2Brpi1_armhf.deb
    - https://archive.raspbian.org/raspbian/pool/main/d/doxygen/doxygen_1.9.4-4_armhf.deb
+     Then run the following commands:
+   ```
+   sudo dpkg -i libxapian30_1.4.22-1_armhf.deb
+   sudo dpkg -i libclang1-14_14.0.6-12%2Brpi1_armhf.deb
+   sudo dpkg -i libclang-cpp14_14.0.6-12%2Brpi1_armhf.deb
+   sudo dpkg -i libllvm14_14.0.6-12%2Brpi1_armhf.deb
+   sudo dpkg -i doxygen_1.9.4-4_armhf.deb
+   ```
 6. Type `doxygen ceng153`
 7. Use WinSCP to obtain your makefile and `~/ceng153/labs/queue/rtf/refman.rtf` which you should rename to `LastName153L06.rtf`.
 8. In Word, Edit the second page of the .rtf to include the text contents of your makefile and a sample output screen capture including the output of program execution from within VS Code.
