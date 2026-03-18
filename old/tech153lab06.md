@@ -10,7 +10,8 @@
    - https://github.com/PrototypeZone/ceng153/blob/main/old/led2472g.h
    - https://github.com/PrototypeZone/ceng153/blob/main/old/led2472g.c
    - https://github.com/PrototypeZone/ceng153/blob/main/old/font.h
-   - https://github.com/PrototypeZone/ceng153/blob/main/old/ceng153 
+   - https://github.com/PrototypeZone/ceng153/blob/main/old/ceng153
+     Note that ceng153 will likely get the extension `.txt` please remember to rename it to remove the extension.
 4. Download and use WinSCP to transfer the following file into your `~/ceng153/labs/queue/.vscode` directory:
    - https://github.com/PrototypeZone/ceng153/blob/main/old/.vscode/launch.json 
 
