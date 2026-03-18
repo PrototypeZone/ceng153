@@ -41,11 +41,11 @@ void DisplayStudents(student_t * head);
 */
 void DisplayStudents(student_t * head) 
 { 
-	student_t * cur=head;  
-	for(;cur!=NULL;cur=cur->next) 
-	{
+    student_t * cur=head;  
+    for(;cur!=NULL;cur=cur->next) 
+    {
 		printf("Student %d's grade is %f\n", cur->studentNum, cur->grade);
-	}
+    }
 
 } 
 
@@ -70,45 +70,46 @@ Add this function after your main function in `queue.c` and complete the annotat
  */
 student_t * AddOneStudent(int studentNum, double grade,student_t * head) 
 { 
-	student_t * cur=head;  
-	student_t * arecord;  
+    student_t * cur=head;  
+    student_t * arecord;  
 
     // First we start with a pointer and allocate some memory to it:
-	arecord = (student_t *) calloc(1,sizeof(student_t));  
+    arecord = (student_t *) calloc(1,sizeof(student_t));  
  
-	if(arecord == NULL)  
-	{  
+    if(arecord == NULL)  
+    {  
 		fprintf(stderr,"\nCannot allocate memory\n");  
 		return NULL; //EXIT_FAILURE;  
-	} 
+    } 
     // We then can assign values to the various parts:
-	arecord->studentNum = studentNum;  
-	arecord->grade = grade;  
-	arecord->next=NULL; 
-	if(head == NULL)  
-	{ 
+    arecord->studentNum = studentNum;  
+    arecord->grade = grade;  
+    arecord->next=NULL; 
+    if(head == NULL)  
+    { 
 		return arecord; 
-	} 
-	else if (head->next == NULL) 
-	{ 
+    } 
+    else if (head->next == NULL) 
+    { 
 		head->next=arecord; 
 		return head; 
-	} 
+    } 
  
-	while (cur->next!=NULL)
-	{
+    while (cur->next!=NULL)
+    {
 		cur = cur->next;
-	} 
-cur->next=arecord;
-	return head;
+    } 
+    cur->next=arecord;
+    return head;
 } 
 ```
 ## Task 3 - Displaying the contents of a linked list 
 1. In your main, declare a pointer and call the functions:
 ```
-	student_t * head=NULL;
-	head=AddOneStudent(classlist[0].studentNum,classlist[0].grade,head);  
-	DisplayStudents(head); 
+    printf("Printing from the Linked List\n");
+    student_t * head=NULL;
+    head=AddOneStudent(classlist[0].studentNum,classlist[0].grade,head);  
+    DisplayStudents(head); 
 ```
 2.	Show the output of your queue program to your professor.
 ## Task 4 - Submitting your work
