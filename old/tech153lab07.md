@@ -106,7 +106,7 @@ cur->next=arecord;
 ## Task 3 - Displaying the contents of a linked list 
 1. In your main, declare a pointer and call the functions:
 ```
-	student_t * head;
+	student_t * head=NULL;
 	head=AddOneStudent(classlist[0].studentNum,classlist[0].grade,head);  
 	DisplayStudents(head); 
 ```
