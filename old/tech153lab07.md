@@ -60,7 +60,7 @@ While all pointers use the same amount of memory, when you specify the structure
 
 While the address of the ‘head’ record normally does not change, we can link any number of records to the end of the list, by finding the address of the last record, allocating some memory, and storing the pointers in the last record.  Records are removed from the list, by changing the pointers of the previous record’s next field.  You do not have to maintain a count of the number of list members, as you just keep searching the ‘next’ memory locations until you hit the last one, which is a null pointer.  While sorting is a bit more complicated, it relies on changing the next pointers to reflect the desired sort key.   
 
-Add this function after your main function in `queue.c`: 
+Add this function after your main function in `queue.c` and complete the annotations: 
 ```
 /** Beginning with adding to the bottom of the list
  * @since
