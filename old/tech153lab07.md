@@ -4,7 +4,7 @@
 
 ## Task 1 - Setting up your environment and annotating source code   
 1. Open your `~/ceng153/labs/queue` folder in VS Code, complete lab06 if you haven't.   
-2. Annotate your source code and add the funvction prototypes; then add the display function after your main function:   
+2. Annotate your source code and add the function prototypes; then add the display function after your main function:   
 This process adds comments to the code that are embedded with special symbols and key words used by doxygen to automate documentation generation. We will use the JavaDocs style for our function annotations:   
     
 brief description   
