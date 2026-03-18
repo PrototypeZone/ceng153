@@ -81,7 +81,7 @@ student_t * AddOneStudent(int studentNum, double grade,student_t * head)
 		fprintf(stderr,"\nCannot allocate memory\n");  
 		return NULL; //EXIT_FAILURE;  
 	} 
-    / We then can assign values to the various parts:
+    // We then can assign values to the various parts:
 	arecord->studentNum = studentNum;  
 	arecord->grade = grade;  
 	arecord->next=NULL; 
