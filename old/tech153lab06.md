@@ -139,9 +139,9 @@ A visual interface is available with Vs Code for the gdb debugger.
    ```
 6. Type `doxygen ceng153`
 7. Use WinSCP to obtain your makefile and `~/ceng153/labs/queue/rtf/refman.rtf` which you should rename to `LastName153L06.rtf`.
-8. In Word, Edit the second page of the .rtf to include the text contents of your makefile and a sample output screen capture including the output of program execution from within VS Code.
-9. Please use Notepad++->Plugins->NppExport->Copy RTF to clipboard then paste the makefile text.
-10. Use Ctrl A to select all and F9 to update fields to generate the table of contents and the index. If you are using LibreOffice Writer, right click on the gray Table of contents and select Update index also right click on the gray INDEX at the end of the file and select Update index.
+8. Open the rtf in Word then use Ctrl A to select all and F9 to update fields to generate the table of contents and the index. If you are using LibreOffice Writer, right click on the gray Table of contents and select Update index also right click on the gray INDEX at the end of the file and select Update index.
+9. Edit the second page of the .rtf to include the text contents of your makefile and a sample output screen capture including the output of program execution from within VS Code.
+10. Please use Notepad++->Plugins->NppExport->Copy RTF to clipboard then paste the makefile text.
 11. Submit the .rtf on blackboard.
 
 
