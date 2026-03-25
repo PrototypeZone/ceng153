@@ -78,7 +78,10 @@ student_t * RemoveOneStudent(int studentNum,student_t * head)
 ```
 ## Task 3 - Updating main 
 1. If you have yet to in your main, make sure your main adds all 3 entries from the array into the linked list. Then delete the middle entry prior to displaying the linked list.
-2. Show the output of your queue program to your professor.
+```
+head=RemoveOneStudent(classlist[1].studentNum,head);
+```
+3. Show the output of your queue program to your professor.
 ## Task 4 - Submitting your work
 1. Type `doxygen ceng153`
 2. Use WinSCP to obtain your makefile and `~/ceng153/labs/queue/rtf/refman.rtf` which you should rename to `LastName153L08.rtf`.
