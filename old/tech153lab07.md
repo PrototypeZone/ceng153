@@ -115,9 +115,9 @@ student_t * AddOneStudent(int studentNum, double grade,student_t * head)
 ## Task 4 - Submitting your work
 1. Type `doxygen ceng153`
 2. Use WinSCP to obtain your makefile and `~/ceng153/labs/queue/rtf/refman.rtf` which you should rename to `LastName153L07.rtf`.
-3. In Word, Edit the second page of the .rtf to include the text contents of your makefile and a sample output screen capture including the output of program execution from within VS Code.
-4. Please use Notepad++->Plugins->NppExport->Copy RTF to clipboard then paste the makefile text.
-5. Use Ctrl A to select all and F9 to update fields to generate the table of contents and the index. If you are using LibreOffice Writer, right click on the gray Table of contents and select Update index also right click on the gray INDEX at the end of the file and select Update index.
+3. Open the rtf in Word then use Ctrl A to select all and F9 to update fields to generate the table of contents and the index. If you are using LibreOffice Writer, right click on the gray Table of contents and select Update index also right click on the gray INDEX at the end of the file and select Update index.
+4. Edit the second page of the .rtf to include the text contents of your makefile and a sample output screen capture including the output of program execution from within VS Code.
+5. Please use Notepad++->Plugins->NppExport->Copy RTF to clipboard then paste the makefile text.
 6. Submit the .rtf on blackboard.
 
 
