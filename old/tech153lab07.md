@@ -52,7 +52,7 @@ void DisplayStudents(student_t * head)
 ```
 Your task is to add header annotations for all files and add in the header information for all non-stub functions (ie./in other words: add header information for all functions that have code that does something).
 ## Task 2 - Creating a linked list
-While our current system keeps the information in an array, arrays can become quite complex, requiring more types, prioritization, and other factors.  As such, we will transition to using a list data structure that can dynamically grow or shrink, rather than use a fixed sized construct such as an array.  The linked list will dynamically allocate/deallocate memory, and track the various alarm records using pointers.   
+While our current system keeps the information in an array, arrays can become quite complex, requiring more types, prioritization, and other factors.  As such, we will transition to using a list data structure that can dynamically grow or shrink, rather than use a fixed sized construct such as an array.  The linked list will dynamically allocate/deallocate memory, and track the records using pointers.   
 
 With linked lists, each collection of data is defined with a structure and additionally these structures have pointers that reference where other similar data records can be found.  This next field is termed ‘self-referential’ as it holds a memory address to an object that is its own type.   
 
