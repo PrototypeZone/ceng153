@@ -55,5 +55,5 @@ x classlist
 x/16 classlist
 x/16d classlist
 ```
-## Task 4 - Submitting your work
+## Task 3 - Submitting your work
 1. Submit a screen capture of the terminal to blackboard.
