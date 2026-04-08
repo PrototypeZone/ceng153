@@ -185,13 +185,14 @@ sudo apt install xbitmaps
 sudo apt install xterm   
 30. sudo apt install doxygen -y N.B. doxygen, not in image this round but should be in the next round, also needs libxapian30 libllvm14 libclang-cpp14 libclang1-14 
 31. sudo apt install code -y
-32. Start (Raspberry Symbol)->Programming->Visual Studio Code 
-33. Install the C/C++ Extension by Microsoft   
-34. Then compile at a terminal in the sensehat directory by typing:  ```cd C153SenseHat2025-06-12```
-35. ```make```
+32. sudo apt install pinta -y
+33. Start (Raspberry Symbol)->Programming->Visual Studio Code 
+34. Install the C/C++ Extension by Microsoft   
+35. Then compile at a terminal in the sensehat directory by typing:  ```cd C153SenseHat2025-06-12```
+36. ```make```
 (Note that only the latest Sense HAT Version 2 has the TCS3400 RGB colour and brightness sensor)   
-36. ```make shtest```
-37. deprecated create/edit /etc/rc.local and add sudo /home/pi/shtest & on a line before the exit command
+37. ```make shtest```
+38. deprecated create/edit /etc/rc.local and add sudo /home/pi/shtest & on a line before the exit command
     https://askubuntu.com/questions/919054/how-do-i-run-a-single-command-at-startup-using-systemd
 create e.g. sudo vim /etc/systemd/system/shtest.service
 ```
