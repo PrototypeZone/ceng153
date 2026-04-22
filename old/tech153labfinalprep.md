@@ -1,4 +1,4 @@
 # TECH 153 Lab preparing to write tomorrow's final
-1. Try to run what we did in class last week.
+1. Try to run what we did in class last week (add a couple of items to a linked list and display them).
 2. Verify that lab grades are correct.
 3. Not related to final but interesting to explore TUI (textual user interface) https://github.com/PrototypeZone/tech104/blob/main/curses.md
